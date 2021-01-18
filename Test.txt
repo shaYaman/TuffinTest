@@ -1,0 +1,22 @@
+Selenium task:
+
+Hereby a task in selenium, use selenium web driver with Programming language of your choice:
+
+· Create at list one page-object for the test
+
+· Enter google search and Find “ynetnews” (Israeli news website in English - www.ynetnews.com)
+
+· Enter the website
+
+· Verify the correct webpage is opened
+
+· Weather: the current weather in the homepage print the weather
+
+· Weather: Change the city to Eilat and print the weather
+
+· Open the page in resolution 1920*1080
+
+· Open an article of your choice
+
+· Verify “send to a friend” link exist in the article
+

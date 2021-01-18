@@ -1,0 +1,178 @@
+{
+  "id": "58ad589f-6fb5-414a-b576-11a13bf90f96",
+  "version": "2.0",
+  "name": "Tuffin",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "90bbfec4-d5ac-4749-ba2d-85723b1ce4f6",
+    "name": "ShayYnetNews",
+    "commands": [{
+      "id": "538c659e-e4b2-4b5c-ae6c-93dd8e132791",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a49fa2e-a10c-4caf-a7b3-ba5014394f08",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1020x720",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c8e4f69-1b52-4629-ab07-6af3cf0dcb96",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc967a7d-b471-4866-b97a-0a306104c9d4",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "ynetnew"
+    }, {
+      "id": "f245877a-ed84-4876-bd1a-ac36509aa974",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "541cfd3d-1298-4cac-aa1f-17293373017e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'https://www.ynetnews.com')]",
+      "targets": [
+        ["css=div:nth-child(1) > .tF2Cxc a .iUh30 > span:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/a/div/cite/span", "xpath:idRelative"],
+        ["xpath=//cite/span", "xpath:position"],
+        ["xpath=//span[contains(.,'https://www.ynetnews.com')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a3a7b94-a5ff-4f6e-81a6-128af6e31eed",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//img[@alt='Ynetnews - news and update 24 hours']",
+      "targets": [
+        ["css=#SJLEeDItZfJu > img", "css:finder"],
+        ["xpath=//img[@alt='Ynetnews - news and update 24 hours']", "xpath:img"],
+        ["xpath=//a[@id='SJLEeDItZfJu']/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "ea502374-c995-49fe-96b2-8980945a51dc",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//img[@alt='Ynetnews - news and update 24 hours']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82c24fbb-ab51-4558-a4a7-0c490ab68611",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.weathertemps",
+      "targets": [
+        ["css=.weathertemps", "css:finder"],
+        ["xpath=//div[@id='cdanwmansrch_weathertempsdiv']/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/a/span", "xpath:position"]
+      ],
+      "value": "DefualtWeatherTemp"
+    }, {
+      "id": "7dd1e00d-ed6a-4ca3-bc9a-f92f4a37333e",
+      "comment": "",
+      "command": "click",
+      "target": "id=weathercityselect",
+      "targets": [
+        ["id=weathercityselect", "id"],
+        ["css=#weathercityselect", "css:finder"],
+        ["xpath=//select[@id='weathercityselect']", "xpath:attributes"],
+        ["xpath=//div[@id='mainWeatherSelect']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95675acb-e71e-4c26-a7b8-6e872c202555",
+      "comment": "",
+      "command": "select",
+      "target": "id=weathercityselect",
+      "targets": [],
+      "value": "label=Eilat"
+    }, {
+      "id": "38935093-be1d-4f8d-bd1b-bf6d853b781c",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.weathertemps",
+      "targets": [
+        ["css=.weathertemps", "css:finder"],
+        ["xpath=//div[@id='cdanwmansrch_weathertempsdiv']/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/a/span", "xpath:position"]
+      ],
+      "value": "EilatWeatherTemp"
+    }, {
+      "id": "5470dd9f-0126-46e9-bce7-e6cb48d66d76",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d319db25-ac86-48eb-a036-6ab249978373",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a/div/span",
+      "targets": [
+        ["css=#HJxIgenqfzk00 > .slotTitle > span", "css:finder"],
+        ["xpath=//a[@id='HJxIgenqfzk00']/div/span", "xpath:idRelative"],
+        ["xpath=//a/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Israel OKs hundreds of settlement homes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "192d97d8-a65e-4a5f-adf5-d0f4a7ae7497",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//button[contains(.,'send to friend')]",
+      "targets": [
+        ["css=.ArticleSideShareComponent_mailto", "css:finder"],
+        ["xpath=//span[@id='H15WkUVHWku']/div/ul/li[3]/button", "xpath:idRelative"],
+        ["xpath=//span/div/ul/li[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'send to friend')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "be5c6d46-3d69-4a07-9c5a-1b052a60f7b5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["90bbfec4-d5ac-4749-ba2d-85723b1ce4f6"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
